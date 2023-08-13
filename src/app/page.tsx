@@ -1,12 +1,23 @@
 "use client";
 import useDashboard from "./useDashboard";
-import { useEffect } from "react";
-import { dummyData } from "./utils/dummyData";
+import { dummyData } from "../utils/dummyData";
 import FormSlider from "@/components/formSlider";
 import NavigationButtons from "@/components/navigationButtons";
+import { useQuery } from "@tanstack/react-query";
 
 export default function Home() {
-  const { handleWheel, goToSlide, currentIndex } = useDashboard();
+  const { handleWheel, goToSlide, currentIndex, fetchSlides } = useDashboard();
+  const { data, isLoading, error } = useQuery({
+    queryKey: ["slides"],
+    queryFn: fetchSlides,
+  });
+
+  if (isLoading)
+    return (
+      <div className="h-screen w-full animate-pulse flex items-center justify-center text-green-600 text-2xl">
+        در حال لود کردن
+      </div>
+    );
 
   return (
     <div
@@ -24,7 +35,6 @@ export default function Home() {
         goToSlide={goToSlide}
         currentIndex={currentIndex}
       />
-
       <div className="absolute bottom-5 left-[48%] w-[4%] flex justify-center items-center">
         <NavigationButtons goToSlide={goToSlide} currentIndex={currentIndex} />
       </div>

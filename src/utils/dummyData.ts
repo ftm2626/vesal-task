@@ -80,19 +80,19 @@ export const dummyData: apiResT = {
                 "main_slider_buttons": [
                     {
                         "id": 1,
-                        "title": "دکمه یک",
+                        "title": "دکمه هفت",
                         "link": "/slide1/btn1",
                         "main_slider_id": 100
                     },
                     {
                         "id": 2,
-                        "title": "دکمه دوم",
+                        "title": "دکمه هشت",
                         "link": "/slide1/btn2",
                         "main_slider_id": 100
                     },
                     {
                         "id": 6,
-                        "title": "دکمه تست",
+                        "title": "دکمه نه",
                         "link": "/test",
                         "main_slider_id": 100
                     }
@@ -111,19 +111,19 @@ export const dummyData: apiResT = {
                 "main_slider_buttons": [
                     {
                         "id": 1,
-                        "title": "دکمه یک",
+                        "title": "دکمه ده",
                         "link": "/slide1/btn1",
                         "main_slider_id": 100
                     },
                     {
                         "id": 2,
-                        "title": "دکمه دوم",
+                        "title": "دکمه یازده",
                         "link": "/slide1/btn2",
                         "main_slider_id": 100
                     },
                     {
                         "id": 6,
-                        "title": "دکمه تست",
+                        "title": "دکمه دوازده",
                         "link": "/test",
                         "main_slider_id": 100
                     }

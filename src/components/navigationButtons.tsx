@@ -1,4 +1,4 @@
-import { dummyData } from "@/app/utils/dummyData";
+import { dummyData } from "@/utils/dummyData";
 import React from "react";
 
 export default function NavigationButtons({

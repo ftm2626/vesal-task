@@ -1,6 +1,6 @@
-import { mainSliderT } from "@/app/interface/dashboard";
 import React from "react";
 import NavigationButtons from "./navigationButtons";
+import { mainSliderT } from "@/interface/dashboard";
 
 export default function FormSlider({
   data,
